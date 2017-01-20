@@ -1,0 +1,25 @@
+{
+  "name": "huh-translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/villejacob/huh-translator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/villejacob/huh-translator/issues"
+  },
+  "homepage": "https://github.com/villejacob/huh-translator#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "mstranslator": "^2.1.1",
+    "path": "^0.12.7"
+  }
+}

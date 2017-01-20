@@ -1,0 +1,13 @@
+body, html {
+	margin: 0;
+}
+
+div.translated {
+
+}
+
+div.bar {
+	height: 100px;
+	width: 100vw;
+	background: #444;
+}
