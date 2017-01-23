@@ -109,15 +109,35 @@ li.map-button a img {
 
 div.to-translate {
 	position: absolute;
-	height: 38vh;
+	height: 44vh;
 	width: 100vw;
-	top: 56vh;
+	top: 55.9vh;
 	background: #777;
 }
 
 div.footer {
-	top: 94vh;
+	position: absolute;
+	text-align: center;
+	top: 92vh;
 	height: 6vh;
-	width: 100vw;
+	width: 96vw;
+	margin: 2vw 2vw;
 	background: #444;
 }
+
+div.footer a {
+	position: relative;
+	height: auto;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	padding: 0 1em;
+	line-height: 2em;
+}
+
+div.footer img {
+	position: absolute;
+	height: 1em;
+	padding: .5em;
+}
+
