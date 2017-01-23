@@ -26,6 +26,7 @@ nav.bar {
 	list-style:none;
 	position:relative;
 	float:left;
+	width: 100vw;
 	margin:0;
 	padding:0
 }
@@ -37,7 +38,15 @@ nav.bar {
 	color: white;
 	text-decoration:none;
 	line-height:6vh;
-	padding:0 8vw;
+	padding:0 6vw;
+}
+
+.bar ul .user-1 a {
+	width: 20vw;
+}
+
+.bar ul .user-2 a {
+	width: 20vw;
 }
 
 .bar ul li
@@ -55,7 +64,7 @@ nav.bar {
 
 .bar ul li:hover
 {
-	background:#B6B6B6;
+	background:#BBB;
 }
 
 .bar ul ul
@@ -99,12 +108,16 @@ li.swap-button a {
 }
 
 li.swap-button a img {
-	height: 40px;
+	height: 0.8em;
+}
+
+.bar ul li.map-button {
+	float: right;
 }
 
 li.map-button a {
 	line-height: 7vh;
-	padding: 0 7vw;
+	padding: 0 5vw;
 }
 
 li.map-button a img {
@@ -115,8 +128,19 @@ div.to-translate {
 	position: absolute;
 	height: 44vh;
 	width: 100vw;
-	top: 55.9vh;
+	top: 56vh;
 	background: #777;
+}
+
+div.to-translate button {
+	position: absolute;
+	right: 6vw;
+	bottom: 10vh;
+}
+
+div.to-translate button img {
+	width: 16vw;
+	height: auto;
 }
 
 div.footer {
@@ -141,7 +165,7 @@ div.footer a {
 
 div.footer img {
 	position: absolute;
-	height: 1em;
-	padding: .5em;
+	height: .9em;
+	padding: .6em;
 }
 

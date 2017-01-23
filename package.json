@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/villejacob/huh-translator#readme",
   "dependencies": {
+    "body-parser": "^1.16.0",
     "ejs": "^2.5.5",
     "express": "^4.14.0",
     "mstranslator": "^2.1.1",

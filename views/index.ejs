@@ -4,126 +4,127 @@
 	<title>huh?</title>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 	<div class="translated"></div>
 	<nav class="bar">
 		<ul>
 			<li class="user-1"><a href="#">English</a>
-				<ul>
-					<li>Afrikaans</li>
-					<li>Arabic</li>
-					<li>Bosnian (Latin)</li>
-					<li>Bulgarian</li>
-					<li>Catalan</li>
-					<li>Chinese Simplified</li>
-					<li>Chinese Traditional</li>
-					<li>Croatian</li>
-					<li>Czech</li>
-					<li>Danish</li>
-					<li>Dutch</li>
-					<li>English</li>
-					<li>Estonian</li>
-					<li>Finnish</li>
-					<li>French</li>
-					<li>German</li>
-					<li>Greek</li>
-					<li>Haitian Creole</li>
-					<li>Hebrew</li>
-					<li>Hindi</li>
-					<li>Hmong Daw</li>
-					<li>Hungarian</li>
-					<li>Indonesian</li>
-					<li>Italian</li>
-					<li>Japanese</li>
-					<li>Kiswahili</li>
-					<li>Klingon</li>
-					<li>Klingon (pIqaD)</li>
-					<li>Korean</li>
-					<li>Latvian</li>
-					<li>Lithuanian</li>
-					<li>Malay</li>
-					<li>Maltese</li>
-					<li>Norwegian</li>
-					<li>Persian</li>
-					<li>Polish</li>
-					<li>Portuguese</li>
-					<li>Querétaro Otomi</li>
-					<li>Romanian</li>
-					<li>Russian</li>
-					<li>Serbian (Cyrillic)</li>
-					<li>Serbian (Latin)</li>
-					<li>Slovak</li>
-					<li>Slovenian</li>
-					<li>Spanish</li>
-					<li>Swedish</li>
-					<li>Thai</li>
-					<li>Turkish</li>
-					<li>Ukrainian</li>
-					<li>Urdu</li>
-					<li>Vietnamese</li>
-					<li>Welsh</li>
-					<li>Yucatec Maya</li>
+				<ul class="languages">
+					<li id="af">Afrikaans</li>
+					<li id="ar">Arabic</li>
+					<li id="bs-Latn">Bosnian</li>
+					<li id="bg">Bulgarian</li>
+					<li id="ca">Catalan</li>
+					<li id="zh-CHS">ChineseS</li>
+					<li id="zh-CHT">ChineseT</li>
+					<li id="hr">Croatian</li>
+					<li id="cs">Czech</li>
+					<li id="da">Danish</li>
+					<li id="nl">Dutch</li>
+					<li id="en">English</li>
+					<li id="et">Estonian</li>
+					<li id="fi">Finnish</li>
+					<li id="fr">French</li>
+					<li id="de">German</li>
+					<li id="el">Greek</li>
+					<li id="ht">Haitian</li>
+					<li id="he">Hebrew</li>
+					<li id="hi">Hindi</li>
+					<li id="mww">HmongD</li>
+					<li id="hu">Hungarian</li>
+					<li id="id">Indonesian</li>
+					<li id="it">Italian</li>
+					<li id="ja">Japanese</li>
+					<li id="sw">Kiswahili</li>
+					<li id="tlh">Klingon</li>
+					<li id="tlh-Qaak">KlingonP</li>
+					<li id="ko">Korean</li>
+					<li id="lv">Latvian</li>
+					<li id="lt">Lithuanian</li>
+					<li id="ms">Malay</li>
+					<li id="mt">Maltese</li>
+					<li id="no">Norwegian</li>
+					<li id="fa">Persian</li>
+					<li id="pl">Polish</li>
+					<li id="pt">Portuguese</li>
+					<li id="otq">QuerétaroO</li>
+					<li id="ro">Romanian</li>
+					<li id="ru">Russian</li>
+					<li id="sr-Cyrl">SerbianC</li>
+					<li id="sr-Latn">SerbianL</li>
+					<li id="sk">Slovak</li>
+					<li id="sl">Slovenian</li>
+					<li id="es">Spanish</li>
+					<li id="sv">Swedish</li>
+					<li id="th">Thai</li>
+					<li id="tr">Turkish</li>
+					<li id="uk">Ukrainian</li>
+					<li id="ur">Urdu</li>
+					<li id="vi">Vietnamese</li>
+					<li id="cy">Welsh</li>
+					<li id="yua">YucatecM</li>
 				</ul>
 			</li>
 			<li class="swap-button">
 				<a href="#"><img src="/assets/swap.png"></a>
 			</li>
 			<li class="user-2"><a href="#">Spanish</a>
-				<ul>
-					<li>Afrikaans</li>
-					<li>Arabic</li>
-					<li>Bosnian (Latin)</li>
-					<li>Bulgarian</li>
-					<li>Catalan</li>
-					<li>Chinese Simplified</li>
-					<li>Chinese Traditional</li>
-					<li>Croatian</li>
-					<li>Czech</li>
-					<li>Danish</li>
-					<li>Dutch</li>
-					<li>English</li>
-					<li>Estonian</li>
-					<li>Finnish</li>
-					<li>French</li>
-					<li>German</li>
-					<li>Greek</li>
-					<li>Haitian Creole</li>
-					<li>Hebrew</li>
-					<li>Hindi</li>
-					<li>Hmong Daw</li>
-					<li>Hungarian</li>
-					<li>Indonesian</li>
-					<li>Italian</li>
-					<li>Japanese</li>
-					<li>Kiswahili</li>
-					<li>Klingon</li>
-					<li>Klingon (pIqaD)</li>
-					<li>Korean</li>
-					<li>Latvian</li>
-					<li>Lithuanian</li>
-					<li>Malay</li>
-					<li>Maltese</li>
-					<li>Norwegian</li>
-					<li>Persian</li>
-					<li>Polish</li>
-					<li>Portuguese</li>
-					<li>Querétaro Otomi</li>
-					<li>Romanian</li>
-					<li>Russian</li>
-					<li>Serbian (Cyrillic)</li>
-					<li>Serbian (Latin)</li>
-					<li>Slovak</li>
-					<li>Slovenian</li>
-					<li>Spanish</li>
-					<li>Swedish</li>
-					<li>Thai</li>
-					<li>Turkish</li>
-					<li>Ukrainian</li>
-					<li>Urdu</li>
-					<li>Vietnamese</li>
-					<li>Welsh</li>
-					<li>Yucatec Maya</li>
+				<ul class="languages">
+					<li id="af">Afrikaans</li>
+					<li id="ar">Arabic</li>
+					<li id="bs-Latn">Bosnian</li>
+					<li id="bg">Bulgarian</li>
+					<li id="ca">Catalan</li>
+					<li id="zh-CHS">ChineseS</li>
+					<li id="zh-CHT">ChineseT</li>
+					<li id="hr">Croatian</li>
+					<li id="cs">Czech</li>
+					<li id="da">Danish</li>
+					<li id="nl">Dutch</li>
+					<li id="en">English</li>
+					<li id="et">Estonian</li>
+					<li id="fi">Finnish</li>
+					<li id="fr">French</li>
+					<li id="de">German</li>
+					<li id="el">Greek</li>
+					<li id="ht">Haitian</li>
+					<li id="he">Hebrew</li>
+					<li id="hi">Hindi</li>
+					<li id="mww">HmongD</li>
+					<li id="hu">Hungarian</li>
+					<li id="id">Indonesian</li>
+					<li id="it">Italian</li>
+					<li id="ja">Japanese</li>
+					<li id="sw">Kiswahili</li>
+					<li id="tlh">Klingon</li>
+					<li id="tlh-Qaak">KlingonP</li>
+					<li id="ko">Korean</li>
+					<li id="lv">Latvian</li>
+					<li id="lt">Lithuanian</li>
+					<li id="ms">Malay</li>
+					<li id="mt">Maltese</li>
+					<li id="no">Norwegian</li>
+					<li id="fa">Persian</li>
+					<li id="pl">Polish</li>
+					<li id="pt">Portuguese</li>
+					<li id="otq">QuerétaroO</li>
+					<li id="ro">Romanian</li>
+					<li id="ru">Russian</li>
+					<li id="sr-Cyrl">SerbianC</li>
+					<li id="sr-Latn">SerbianL</li>
+					<li id="sk">Slovak</li>
+					<li id="sl">Slovenian</li>
+					<li id="es">Spanish</li>
+					<li id="sv">Swedish</li>
+					<li id="th">Thai</li>
+					<li id="tr">Turkish</li>
+					<li id="uk">Ukrainian</li>
+					<li id="ur">Urdu</li>
+					<li id="vi">Vietnamese</li>
+					<li id="cy">Welsh</li>
+					<li id="yua">YucatecM</li>
 				</ul>
 			</li>
 			<li class="map-button">
@@ -131,13 +132,26 @@
 			</li>
 		</ul>
 	</nav>
-	<div class="to-translate"></div>
+	<div class="to-translate">
+		<form action="/" method="POST">
+			<button><img src="/assets/translate.png"></button>
+		</form>
+	</div>
 	<div class="footer">
-		<a href="https://ufl.qualtrics.
-		com/SE/?SID=SV_6tDxEN8IfogF7Nj">
+		<a href="https://ufl.qualtrics.com/SE/?SID=SV_6tDxEN8IfogF7Nj">
 			<span>survey</span>
 			<img src="/assets/survey.png">
 		</a>
 	</div>
+	<script>
+	$('.user-1 .languages li').click(function(){
+		var langLi = $(this)[0].innerText;
+		$('.user-1 a').text(langLi);
+	});
+	$('.user-2 .languages li').click(function(){
+		var langLi = $(this)[0].innerText;
+		$('.user-2 a').text(langLi);
+	});
+	</script>
 </body>
 </html>
