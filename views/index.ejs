@@ -7,10 +7,12 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-	<div class="translated"></div>
+	<div class="translated">
+		<p class="response"><%= data %></p>
+	</div>
 	<nav class="bar">
 		<ul>
-			<li class="user-1"><a href="#">English</a>
+			<li class="user" id="user-1"><a href="#"></a>
 				<ul class="languages">
 					<li id="af">Afrikaans</li>
 					<li id="ar">Arabic</li>
@@ -70,7 +72,7 @@
 			<li class="swap-button">
 				<a href="#"><img src="/assets/swap.png"></a>
 			</li>
-			<li class="user-2"><a href="#">Spanish</a>
+			<li class="user" id="user-2"><a href="#"></a>
 				<ul class="languages">
 					<li id="af">Afrikaans</li>
 					<li id="ar">Arabic</li>
@@ -134,6 +136,9 @@
 	</nav>
 	<div class="to-translate">
 		<form action="/" method="POST">
+			<input type="hidden" name="lang1" id="lang1" value="">
+			<input type="hidden" name="lang2" id="lang2" value="">
+			<textarea name="userText" id="userText" wrap="physical" placeholder="Tap here to enter text"></textarea>
 			<button><img src="/assets/translate.png"></button>
 		</form>
 	</div>
@@ -144,14 +149,32 @@
 		</a>
 	</div>
 	<script>
-	$('.user-1 .languages li').click(function(){
-		var langLi = $(this)[0].innerText;
-		$('.user-1 a').text(langLi);
+	var langObj1 = $('#<%= params.from %>')[0];
+	var langObj2 = $('#<%= params.to %>')[0];
+	var input1 = $('input#lang1');
+	var input2 = $('input#lang2');
+	renameLanguages();
+	$('#user-1 .languages li').click(function(){
+		langObj1 = $(this)[0];
+		renameLanguages();
 	});
-	$('.user-2 .languages li').click(function(){
-		var langLi = $(this)[0].innerText;
-		$('.user-2 a').text(langLi);
+	$('#user-2 .languages li').click(function(){
+		langObj2 = $(this)[0];
+		renameLanguages();
 	});
+	$('.swap-button a').click(function(){
+		[langObj1, langObj2] = [langObj2, langObj1];
+		renameLanguages();
+	});
+	$('.bar').click(function(){
+		renameLanguages();
+	});
+	function renameLanguages(){
+		$('#user-1 a').text(langObj1.textContent);
+		$('#user-2 a').text(langObj2.textContent);
+		input1.val(langObj1.id);
+		input2.val(langObj2.id);
+	}
 	</script>
 </body>
 </html>

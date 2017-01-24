@@ -13,6 +13,15 @@ div.translated {
 	top: 0;
 }
 
+div.translated .response {
+	padding: .5em;
+	margin: 0;
+	color: #444;
+	font-size: 2.2em;
+	height: 40vh;
+	overflow: scroll;
+}
+
 nav.bar {
 	position: absolute;
 	height: 6vh;
@@ -21,8 +30,7 @@ nav.bar {
 	background: #444;
 }
 
-.bar ul
-{
+.bar ul {
 	list-style:none;
 	position:relative;
 	float:left;
@@ -31,44 +39,32 @@ nav.bar {
 	padding:0
 }
 
-.bar ul a
-{
+.bar ul a {
 	height: 6vh;
-	display:block;
+	display: block;
 	color: white;
 	text-decoration:none;
 	line-height:6vh;
 	padding:0 6vw;
 }
 
-.bar ul .user-1 a {
+.bar ul .user a {
 	width: 20vw;
 }
 
-.bar ul .user-2 a {
-	width: 20vw;
-}
-
-.bar ul li
-{
+.bar ul li {
 	position:relative;
 	float:left;
+	text-align: center;
 	margin:0;
 	padding:0
 }
 
-.bar ul li.current-menu-item
-{
-	background:#ddd;
-}
-
-.bar ul li:hover
-{
+.bar ul li.user:hover {
 	background:#BBB;
 }
 
-.bar ul ul
-{
+.bar ul ul {
 	display: none;
 	position: absolute;
 	overflow: scroll;
@@ -83,22 +79,19 @@ nav.bar {
 	background: #EEE;
 }
 
-.bar ul ul li
-{
+.bar ul ul li {
 	float: none;
 	width: auto;
 	padding: 0.1em 1em;
 	text-align: center;
 }
 
-.bar ul ul a
-{
+.bar ul ul a {
 	line-height:120%;
 	padding:10px 15px
 }
 
-.bar ul li:hover > ul
-{
+.bar ul li:hover > ul {
 	z-index: 1;
 	display:block;
 }
@@ -130,6 +123,29 @@ div.to-translate {
 	width: 100vw;
 	top: 56vh;
 	background: #777;
+}
+
+form {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+div.to-translate #userText {
+	position: relative;
+	top: 1em;
+	border: none;
+	width: 90vw;
+	height: 70%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+	color: white;
+	background: none;
+	overflow: scroll;
+}
+
+#userText:focus {
+	outline: none;
 }
 
 div.to-translate button {

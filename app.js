@@ -6,29 +6,36 @@ var path = require('path');
 var app = express();
 
 app.set("view engine", "ejs");
-// app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/views')));
  
 var client = new MsTranslator({ api_key:  secret.API_KEY }, true);
 
 var params = {
-  text: 'How\'s it going?',
+  text: "",
   from: 'en',
   to: 'es'
 };
 
-// Using initialize_token manually. 
-client.translate(params, (err, data) => {
-  console.log(data);
-});
-
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {params: params, data: ""});
 })
 
 app.post('/', (req, res) => {
-	console.log(req.body);
+	// Initialize paramaters from user data
+	params.text = req.body.userText;
+	params.from = req.body.lang1;
+	params.to = req.body.lang2;
+	// Using initialize_token manually. 
+	client.translate(params, (err, data) => {
+	  if(err){
+	      console.log(err);
+	  } else {
+	      // Redirect back to page
+	      res.render('index', {params: params, data: data});
+	  }
+	});
 });
 
 app.listen(3000, function(){
