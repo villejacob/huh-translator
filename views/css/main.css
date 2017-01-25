@@ -152,6 +152,7 @@ div.to-translate button {
 	position: absolute;
 	right: 6vw;
 	bottom: 10vh;
+	-webkit-appearance: none;
 }
 
 div.to-translate button img {
