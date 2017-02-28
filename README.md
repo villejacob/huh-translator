@@ -8,4 +8,4 @@ Once the repository is saved locally, run:
 
 `node app.js`
 
-Then open the localhost server printed to the terminal
+Then open the localhost server printed to the terminal in your web browser to view the application (make sure to view on mobile layout)
