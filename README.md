@@ -10,4 +10,6 @@ Once the repository is saved locally, run:
 
 Then open the localhost server printed to the terminal in your web browser to view the application (make sure to view on mobile layout)
 
-[![Demo run_local alpha](Previews/run_localhost.gif)]
+![Demo run_local alpha](Previews/run_localhost.gif)
+
+![Demo in_browser alpha](Previews/in_browser.gif)
